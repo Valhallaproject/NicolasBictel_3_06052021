@@ -1,0 +1,27 @@
+
+@import 'variable.scss';
+
+body{
+    width: auto;
+    margin: 0;
+}
+h1, h2, a,span, p{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-weight: bold;
+}
+
+/*-----header-----*/
+header{
+    text-align: center;
+    border-bottom: 2px solid #C0C0C0;
+        img{
+            width: 40%;
+            margin: 10px 0 10px 0;
+        }
+} 
+
+@media only screen and (min-width: 640px){
+
+}

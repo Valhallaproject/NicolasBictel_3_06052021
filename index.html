@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohmyfood</title>
     <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+    <link href="sass/home.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,17 +17,18 @@
     </header>
 
     <main>
-        
+
         <!--LA LOCALISATION-->
         <section id="local">
-            <i class="fas fa-map-marker-alt local_icon"></i>
-            <p class="local_text">Paris, Belleville</p>
+            <i class="fas fa-map-marker-alt local_icon">
+                <span class="local_text">Paris, Belleville</span>
+            </i>
         </section>
 
         <!--LE SLOGAN-->
         <section id="banner">
-            <h1 class="banner_title">Rèservez le menu qui vous convient</h1>
-            <p class="bannre_text">Découvrez des restaurants d'exception,sélectionnés par nos soins.</p>
+            <h1 class="banner_title">Réservez le menu qui<br>vous convient</h1>
+            <p class="banner_text">Découvrez des restaurants d'exception,<br>sélectionnés par nos soins.</p>
             <a href="#" class="banner_btn">Explorer nos restaurants</a>
         </section>
 
@@ -33,20 +36,40 @@
         <section id="guide">
             <div class="container">
                 <h2 class="guide_title">Fonctionnement</h2>
-                <ol class="guide_etapes">
+                <ul class="guide_etapes">
                     <li class="guide_etape">
+                        <div class="guide_number">
+                        <span >1</span>
+                        </div>
+                        <div class="guide_icon">
                         <i class="fas fa-mobile-alt"></i>
-                        <p class="guide_text">Choisissez un restaurant</p>
+                        </div>
+                        <div class="guide_text">
+                        <span >Choisissez un restaurant</span>
+                        </div>
                     </li>
                     <li class="guide_etape">
+                        <div class="guide_number">
+                        <span>2</span>
+                        </div>
+                        <div class="guide_icon">
                         <i class="fas fa-list"></i>
-                        <p class="guide_text">Composez votre menu</p>
-                    </li>
+                        </div>
+                        <div class="guide_text">
+                        <span>Composez votre menu</span>
+                        </div>
                     <li class="guide_etape">
+                        <div class="guide_number">
+                        <span>3</span>
+                        </div>
+                        <div class="guide_icon">
                         <i class="fas fa-store"></i>
-                        <p class="guide_text">Dégustez au restaurant</p>
+                        </div>
+                        <div class="guide_text">
+                        <span>Dégustez au restaurant</span>
+                        </div>
                     </li>
-                </ol>
+                </ul>
             </div>
         </section>
 

@@ -1,0 +1,106 @@
+@import 'variable.scss';
+
+/*-----main----*/
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/*-----LA LOCALISATION-----*/
+#local{
+    background-color: #D3D3D3;
+    text-align: center;
+    .local_icon{
+        margin: 10px 0 10px 0;
+    }
+    .local_text{
+        margin: 10px;
+    }
+}
+
+/*-----LE SLOGAN-----*/
+#banner{
+    background-color: #DCDCDC;
+    text-align: center;
+    padding-bottom: 35px;
+        .banner_text{
+            margin: 10px 0 35px 0;
+        }
+        .banner_btn{
+            padding: 10px 20px 10px 20px;
+            background: linear-gradient(-190deg, $secondary_color,40%,$primary_color);
+            border-radius: 18.5px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: #D3D3D3  0 8px 10px ;
+        }
+}
+
+/*-----GUIDE UTILISATION-----*/
+
+.guide_title{
+    margin-left: 5%;
+}
+.guide_etapes{
+    list-style: none;
+}
+.guide_etape{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    align-items: center;
+    margin-bottom: 20px;
+    .guide_number{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border-radius: 15px;
+        color: white;
+        background-color: $primary_color;
+        font-weight: bold;
+        margin-right: -15px;
+        padding-top: 5px;
+    }
+    .guide_icon{
+        height: 19px;
+        width: 20px;
+        align-items: center;
+        padding: 20px 0 20px 40px;
+        border-radius: 15px 0 0 15px;
+        background-color: #DCDCDC;
+        .fa-store{
+            color: $primary_color;
+        }
+    }
+    .guide_text{
+        width: 60%;
+        padding: 20px 20px 20px 10px;
+        font-weight: bold;
+        border-radius: 0 15px 15px 0;
+        background-color: #DCDCDC;
+
+    }
+}
+
+/*-----RESTAURANTS-----*/
+.restaurants_title{
+    margin-left: 5%;
+}
+.cards{
+    width: 90%;
+    margin: 0 auto;
+}
+.card{
+    width: 100%;
+    height: 200px;
+    border-radius: 25px;
+    .card_image{
+        object-fit: cover;
+        width: 100%;
+        height:180px
+    }
+   
+    
+}
