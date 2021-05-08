@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /*-----main----*/
 main {
   display: -webkit-box;
@@ -52,6 +57,8 @@ main {
 
 .guide_etapes {
   list-style: none;
+  margin-left: 5%;
+  padding: 0;
 }
 
 .guide_etape {
@@ -60,6 +67,7 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 90%;
   margin: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -68,55 +76,73 @@ main {
 }
 
 .guide_etape .guide_number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  border-radius: 15px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
   color: white;
   background-color: #9356DC;
   font-weight: bold;
   margin-right: -15px;
-  padding-top: 5px;
+}
+
+.guide_etape .etape_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 20px;
+  background-color: #DCDCDC;
+  font-size: 16px;
+  width: 95%;
 }
 
 .guide_etape .guide_icon {
-  height: 19px;
-  width: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 20px 0 20px 40px;
-  border-radius: 15px 0 0 15px;
-  background-color: #DCDCDC;
 }
 
 .guide_etape .guide_icon .fa-store {
   color: #9356DC;
 }
 
-.guide_etape .guide_text {
-  width: 60%;
-  padding: 20px 20px 20px 10px;
+.guide_text {
+  padding: 20px 20px 20px 20px;
   font-weight: bold;
-  border-radius: 0 15px 15px 0;
-  background-color: #DCDCDC;
 }
 
 /*-----RESTAURANTS-----*/
+#restaurants {
+  background-color: #DCDCDC;
+}
+
 .restaurants_title {
   margin-left: 5%;
 }
 
 .cards {
+  display: block;
   width: 90%;
   margin: 0 auto;
 }
 
 .card {
   width: 100%;
-  height: 200px;
+  height: 250px;
   border-radius: 25px;
+}
+
+.card .image {
+  height: 180px;
 }
 
 .card .card_image {
@@ -124,5 +150,41 @@ main {
      object-fit: cover;
   width: 100%;
   height: 180px;
+  border-radius: 25px 25px 0 0;
+  position: relative;
+}
+
+.card .card_new {
+  position: absolute;
+  margin: 5% 0 0 -25%;
+  padding: 10px;
+  background-color: #99E2D0;
+}
+
+.card_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 0 0 25px 25px;
+  background-color: #fff;
+}
+
+.content .content_title {
+  margin: 0;
+}
+
+.content .content_local {
+  margin: 0;
+}
+
+.content_btn {
+  font-size: 25px;
 }
 /*# sourceMappingURL=main.css.map */
