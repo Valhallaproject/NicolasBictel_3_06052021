@@ -7,11 +7,25 @@
     <title>Ohmyfood</title>
     <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
     <link href="sass/home.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!--LOADER-->
+    <div class="loader">
+        <div class="loaders">
+            <img  class="logo" src="images/logo/ohmyfood.png" alt="Logo ohmyfood">
+            <div class="loader1">
+            </div>
+            <div class="loader2">
+            </div>
+            <div class="loader3">
+            </div>
+        </div>
+    </div>
 
+    <!--HEADER-->
     <header>
         <img  class="logo" src="images/logo/ohmyfood.png" alt="Logo ohmyfood">
     </header>
@@ -66,7 +80,7 @@
                         <div class="guide_number">
                             <span>3</span>
                         </div>
-                        <div class="etape_content">
+                        <div class="etape_content etape_final">
                             <div class="guide_icon">
                                 <i class="fas fa-store"></i>
                             </div>
@@ -95,7 +109,8 @@
                                 <p class="content_local">Ménilmontant</p>
                             </div>
                             <div class="content_btn">
-                                <i class="far fa-heart"></i>
+                                <input type="checkbox" id="like1" class="like" name="like">
+                                <label for="like1"></label>
                             </div>
                         </div>
                     </a>
@@ -110,7 +125,8 @@
                                 <p class="content_local">Charonne</p>
                             </div>
                             <div class="content_btn">
-                                <i class="far fa-heart"></i>
+                                <input type="checkbox" id="like2" class="like" name="like">
+                                <label for="like2"></label>           
                             </div>
                         </div>
                     </a>
@@ -124,7 +140,8 @@
                                 <p class="content_local">Cité rouge</p>
                             </div>
                             <div class="content_btn">
-                                <i class="far fa-heart"></i>
+                                <input type="checkbox" id="like3" class="like" name="like">
+                                <label for="like3"></label>
                             </div>
                         </div>
                     </a>
@@ -138,7 +155,8 @@
                                 <p class="content_local">Folie-Méricourt</p>
                             </div>
                             <div class="content_btn">
-                                <i class="far fa-heart"></i>
+                                <input type="checkbox" id="like4"  class="like" name="like">
+                                <label for="like4"></label>
                             </div>
                         </div>
                     </a>
@@ -148,13 +166,13 @@
 
     <footer>
         <div class="container">
-            <img src="images/logo/ohmyfood.png" alt="Logo Ohmyfood" class="footer_image">
+            <p class="footer_logo">ohmyfood</p>
             <ul class="footer_items">
                 <li class="footer_item">
-                    <a href="#" class="item">Proposer un restaurant</a>
+                    <a href="#" class="item"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
                 </li>
                 <li class="footer_item">
-                    <a href="#" class="item">Devenir partenaire</a>
+                    <a href="#" class="item"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
                 </li>
                 <li class="footer_item">
                     <a href="#" class="item">Mentions légales</a>

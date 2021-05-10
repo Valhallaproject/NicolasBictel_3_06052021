@@ -14,11 +14,43 @@ h1 {
 /*-----header-----*/
 header {
   text-align: center;
-  border-bottom: 2px solid #C0C0C0;
+  border-bottom: 2px solid #cdc7be;
 }
 
 header img {
   width: 40%;
   margin: 10px 0 10px 0;
+}
+
+/*-----FOOTER-----*/
+footer {
+  background-color: #000;
+  color: white;
+}
+
+footer .container {
+  padding: 5%;
+}
+
+.footer_logo {
+  font-family: 'Shrikhand', cursive;
+  margin-top: 0;
+}
+
+.footer_items {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_item {
+  margin-bottom: 5px;
+}
+
+.footer_item .item {
+  color: white;
+}
+
+.footer_item i {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=base.css.map */
