@@ -185,7 +185,6 @@ main {
 
 .choix_price {
   height: 30px;
-  margin-right: 25px;
   font-weight: bold;
 }
 
@@ -195,6 +194,7 @@ main {
   height: 58px;
   text-align: center;
   line-height: 58px;
+  margin-left: 20px;
 }
 
 .choix_check {
@@ -232,6 +232,11 @@ main {
 .choix3 {
   -webkit-animation: fadeIn 2s;
           animation: fadeIn 2s;
+}
+
+.choix4 {
+  -webkit-animation: fadeIn 2.5s;
+          animation: fadeIn 2.5s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -273,8 +278,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  margin-left: 245px;
+  margin-left: 65vw;
   margin-top: -58px;
 }
 
@@ -287,8 +291,8 @@ main {
 
 /*-----effet à la sélection d'une assiette-----*/
 .choix_check:checked + .choix .animation {
-  -webkit-transform: translate(0px, 0);
-          transform: translate(0px, 0);
+  -webkit-transform: translate(2px, 0);
+          transform: translate(2px, 0);
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -339,9 +343,5 @@ main {
   text-decoration: none;
   -webkit-box-shadow: #cdc7be 0 5px 5px;
           box-shadow: #cdc7be 0 5px 5px;
-}
-
-.commande .command_btn:hover {
-  color: red;
 }
 /*# sourceMappingURL=menu.css.map */

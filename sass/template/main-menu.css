@@ -121,7 +121,6 @@ main {
 
 .choix_price {
   height: 30px;
-  margin-right: 25px;
   font-weight: bold;
 }
 
@@ -131,6 +130,7 @@ main {
   height: 58px;
   text-align: center;
   line-height: 58px;
+  margin-left: 20px;
 }
 
 .choix_check {
@@ -214,8 +214,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  margin-left: 245px;
+  margin-left: 65vw;
   margin-top: -58px;
 }
 
@@ -228,8 +227,8 @@ main {
 
 /*-----effet à la sélection d'une assiette-----*/
 .choix_check:checked + .choix .animation {
-  -webkit-transform: translate(0px, 0);
-          transform: translate(0px, 0);
+  -webkit-transform: translate(2px, 0);
+          transform: translate(2px, 0);
   -webkit-transition: 1s;
   transition: 1s;
 }

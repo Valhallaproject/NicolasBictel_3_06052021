@@ -96,7 +96,6 @@ main{
 } 
 .choix_price{
     height: 30px;
-    margin-right: 25px;
     font-weight: bold;
 }
 .check{
@@ -105,6 +104,7 @@ main{
     height: 58px;
     text-align: center;
     line-height: 58px;
+    margin-left: 20px;
 }
     
 .choix_check{
@@ -147,8 +147,7 @@ main{
     flex-wrap: wrap;
     transform: translate(70px, 0);
     align-items: center;
-    position: relative;
-    margin-left: 245px;
+    margin-left: 65vw;
     margin-top: -58px;
     i{
         transform: rotate(360deg);
@@ -158,7 +157,7 @@ main{
 }
 /*-----effet à la sélection d'une assiette-----*/
 .choix_check:checked + .choix  .animation{
-    transform: translate(0px, 0);
+    transform: translate(2px, 0);
     transition: 1s;
     i{
         transform: rotate(0deg);
