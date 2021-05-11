@@ -145,7 +145,7 @@ main{
 .animation{
     display: flex;
     flex-wrap: wrap;
-    transform: translate(70px, 0);
+    transform: translate(10%, 0);
     align-items: center;
     margin-left: 65vw;
     margin-top: -58px;
@@ -157,7 +157,7 @@ main{
 }
 /*-----effet à la sélection d'une assiette-----*/
 .choix_check:checked + .choix  .animation{
-    transform: translate(2px, 0);
+    transform: translate(10px, 0);
     transition: 1s;
     i{
         transform: rotate(0deg);
@@ -165,7 +165,7 @@ main{
     }
 }
 .choix_check + .choix  .animation{
-    transform: translate(70px, 0);
+    transform: translate(70%, 0);
     transition: 1s;
     i{
         transform: rotate(360deg);
