@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 
-h1, h2, a, span, p {
+h1, h2, h3, h4, a, span, p {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -16,6 +16,12 @@ h1 {
 header {
   text-align: center;
   border-bottom: 2px solid #cdc7be;
+  /*-----Arrow visible que sur les pages menu-----*/
+}
+
+header .arrow {
+  margin: 10px 0 10px 20px;
+  float: left;
 }
 
 header img {
@@ -25,7 +31,7 @@ header img {
 
 /*-----FOOTER-----*/
 footer {
-  background-color: #000;
+  background-color: #393232;
   color: white;
 }
 
@@ -36,6 +42,7 @@ footer .container {
 .footer_logo {
   font-family: 'Shrikhand', cursive;
   margin-top: 0;
+  font-weight: 200;
 }
 
 .footer_items {
@@ -49,6 +56,7 @@ footer .container {
 
 .footer_item .item {
   color: white;
+  text-decoration: none;
 }
 
 .footer_item i {
@@ -293,7 +301,7 @@ main {
   0% {
     opacity: 1;
   }
-  99% {
+  75% {
     opacity: 1;
   }
   100% {
@@ -305,7 +313,7 @@ main {
   0% {
     opacity: 1;
   }
-  99% {
+  75% {
     opacity: 1;
   }
   100% {
@@ -321,10 +329,10 @@ main {
   background-color: #eeeeee;
   z-index: 1;
   text-align: center;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-  -webkit-animation: loader 3s;
-          animation: loader 3s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation: loader 4s;
+          animation: loader 4s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }

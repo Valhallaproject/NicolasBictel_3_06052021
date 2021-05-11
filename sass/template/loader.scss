@@ -1,6 +1,6 @@
 @keyframes loader {
     0% {opacity: 1;}
-    99% {opacity: 1;}
+    75% {opacity: 1;}
     100% {opacity: 0;}
 }
 .loaders {
@@ -11,8 +11,8 @@
     background-color: $gris;
     z-index: 1;
     text-align: center;
-    animation-delay: 3s;
-    animation: loader 3s;
+    animation-delay: 4s;
+    animation: loader 4s;
     animation-fill-mode: both;
     .logo{
         width: 40%;
