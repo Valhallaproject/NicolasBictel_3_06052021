@@ -40,13 +40,12 @@ main {
   margin: 10px 0 35px 0;
 }
 
-#banner .banner_btn {
+#banner a {
   padding: 15px 20px 15px 20px;
   background: linear-gradient(-190deg, #FF79DA, 40%, #9356DC);
   border-radius: 24.5px;
   color: white;
   text-decoration: none;
-  font-weight: bold;
   -webkit-box-shadow: #cdc7be 0 5px 5px;
           box-shadow: #cdc7be 0 5px 5px;
 }
@@ -132,6 +131,25 @@ main {
 .guide_text {
   padding: 20px 20px 20px 20px;
   font-weight: bold;
+}
+
+@media only screen and (min-width: 915px) {
+  .guide_etapes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .guide_etapes .guide_etape {
+    width: 33%;
+  }
+  #banner a:hover {
+    opacity: 0.8;
+  }
 }
 
 /*-----RESTAURANTS-----*/
@@ -231,5 +249,21 @@ main {
   -webkit-background-clip: text;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
+}
+
+@media only screen and (min-width: 640px) {
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .cards .card {
+    width: 40%;
+    margin-top: 50px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

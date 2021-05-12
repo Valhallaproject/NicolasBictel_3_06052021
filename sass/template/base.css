@@ -19,8 +19,13 @@ header {
 }
 
 header .arrow {
-  margin: 10px 0 10px 20px;
+  margin: 3% 0 10px 20px;
   float: left;
+  color: black;
+}
+
+header .arrow i {
+  font-size: 20px;
 }
 
 header img {
@@ -60,5 +65,13 @@ footer .container {
 
 .footer_item i {
   margin-right: 10px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .banner_btn:hover {
+    opacity: 0.8;
+    -webkit-box-shadow: #393232 0 5px 5px;
+            box-shadow: #393232 0 5px 5px;
+  }
 }
 /*# sourceMappingURL=base.css.map */

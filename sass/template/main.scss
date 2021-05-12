@@ -30,16 +30,16 @@ main{
         .banner_text{
             margin: 10px 0 35px 0;
         }
-        .banner_btn{
+        a{
             padding: 15px 20px 15px 20px;
             background: linear-gradient(-190deg, $secondary_color,40%,$primary_color);
             border-radius: 24.5px;
             color: white;
             text-decoration: none;
-            font-weight: bold;
             box-shadow: $gris_fonce  0 5px 5px ;
         }
 }
+
 
 /*-----GUIDE UTILISATION-----*/
 #guide .container{
@@ -100,7 +100,20 @@ main{
 
     }
 
-
+    @media only screen and (min-width:915px){
+        .guide_etapes{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .guide_etape{
+                width: 33%;
+            }
+        }
+        #banner a:hover{
+            opacity: 0.8;
+            
+        }
+    }
 /*-----RESTAURANTS-----*/
 #restaurants{
     background-color: $gris_clair;
@@ -177,6 +190,17 @@ main{
         background: linear-gradient(10deg, $secondary_color,40%,$primary_color);
        -webkit-background-clip: text;
         transition-duration: 0.5s;
+    }
+}
+@media only screen and (min-width: 640px){
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .card{
+            width: 40%;
+            margin-top: 50px;
+        }
     }
 }
 

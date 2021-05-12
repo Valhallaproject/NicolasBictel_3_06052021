@@ -61,7 +61,15 @@ main{
         transition-duration: 0.5s;
     }
 }
-
+@media only screen and (min-width: 640px){
+    .image_restaurant{
+        height: 450px;
+        img{
+            height: 400px;
+        }
+    }
+    
+}
 /*-----MENU_RESTAURANT-----*/
 #menu_restaurant{
     width: 100%;
@@ -85,14 +93,11 @@ main{
 .choix_title, .choix_description{
     margin: 0;
 }
-.choixe_description{
-    white-space: nowrap; 
-    transition: 1s;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
 .choix_content{
     margin: 10px;
+    white-space: nowrap;
+    overflow: visible;
+    width: 60%;
 } 
 .choix_price{
     height: 30px;
@@ -115,6 +120,7 @@ main{
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    height: 58px;
     border-radius: 20px;
     background-color: #fff;
     margin-bottom: 15px;
@@ -147,8 +153,6 @@ main{
     flex-wrap: wrap;
     transform: translate(10%, 0);
     align-items: center;
-    margin-left: 65vw;
-    margin-top: -58px;
     i{
         transform: rotate(360deg);
         font-weight: 900;
@@ -157,7 +161,7 @@ main{
 }
 /*-----effet à la sélection d'une assiette-----*/
 .choix_check:checked + .choix  .animation{
-    transform: translate(10px, 0);
+    transform: translate(0%, 0);
     transition: 1s;
     i{
         transform: rotate(0deg);
@@ -165,7 +169,7 @@ main{
     }
 }
 .choix_check + .choix  .animation{
-    transform: translate(70%, 0);
+    transform: translate(60%, 0);
     transition: 1s;
     i{
         transform: rotate(360deg);
@@ -173,12 +177,18 @@ main{
     }
 }
 .choix_check:checked + .choix  .choix_content{
-    width: 80%;
     .choix_description{
-        width: 80%;
         white-space: nowrap; 
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+}
+.choix_check + .choix  .choix_content{
+    
+    .choix_description{
+        transition-delay: 2s;
+        overflow: visible;
+        
     }
     
 }
@@ -187,17 +197,36 @@ main{
 .commande{
     text-align: center;
     margin: 50px 0 50px 0;
-
-.command_btn{
-    padding: 15px 35px 15px 35px;
-    background: linear-gradient(-190deg, $secondary_color,40%,$primary_color);
-    border-radius: 24.5px;
-    color: white;
-    text-decoration: none;
-    box-shadow: $gris_fonce  0 5px 5px ;
-    
+    .command_btn{
+        padding: 15px 35px 15px 35px;
+        background: linear-gradient(-190deg, $secondary_color,40%,$primary_color);
+        border-radius: 24.5px;
+        color: white;
+        text-decoration: none;
+        box-shadow: $gris_fonce  0 5px 5px ;
+    }
 }
 
+@media only screen and (min-width: 640px){
+    .categories{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 1200px){
+    #menu_restaurant .restaurant_categories{
+    
+        display: flex;
+        justify-content: space-around;
+
+    
+    }.categories{
+        width: 30%;
+    }
+    .command_btn:hover{
+        opacity: 0.8;
+        box-shadow: $footer_color  0 5px 5px ;
+    }
 }
 
 
