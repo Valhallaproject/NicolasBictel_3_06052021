@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohmyfood | La palette du goût</title>
+    <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+    <link href="sass/menu.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!--HEADER-->
+    <header>
+        <a href="index.html" class="arrow"><i class="fas fa-arrow-left"></i></a>
+        <img  class="logo" src="images/logo/ohmyfood.png" alt="Logo ohmyfood">
+    </header>
+
+    <main>
+        <section id="restaurant">
+            <div class="image_restaurant">
+                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant La palette du goût" class="image">
+                <div class="restaurant_content">
+                    <div class="content">
+                        <h1 class="content_title">La palette du goût</h1>
+                    </div>
+                    <div class="content_btn">
+                        <input type="checkbox" id="like1" class="like" name="like">
+                        <label for="like1"></label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu_restaurant">
+            <div class="restaurant_categories">
+                <div class="categories">
+                    <h3 class="categories_title">ENTRÉES</h3>
+                    <div class="line_title"></div>
+                    <div class="categories_choix">
+                        <div class="plat">
+                            <input type="checkbox" id="choix1" class="choix_check">
+                            <label for="choix1" class="choix choix1"></label>
+                            <div class="plat_content plat1">
+                                <div class="choix_content">
+                                    <h4 class="choix_title">Fricassée d'escargot</h4>
+                                    <p class="choix_description">Au piment d'espelette</p>
+                                </div> 
+                                <div class="animation">
+                                    <div class="choix_price">
+                                        <p>25€</p>
+                                    </div>
+                                    <div class="check">
+                                        <i class="far fa-check-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plat">
+                            <input type="checkbox" id="choix2" class="choix_check">
+                            <label for="choix2" class="choix choix2"></label>
+                            <div class="plat_content plat2">
+                                <div class="choix_content">
+                                    <h4 class="choix_title">Foie gras de canard mi-cuit</h4>
+                                    <p class="choix_description">Et ses copeaux de truffe noire</p>
+                                </div>
+                                <div class="animation">
+                                    <div class="choix_price">
+                                        <p>35€</p>
+                                    </div>
+                                    <div class="check">
+                                        <i class="far fa-check-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plat">
+                        <input type="checkbox" id="choix3" class="choix_check">
+                        <label for="choix3" class="choix choix3"></label>
+                        <div class="plat_content palt3">
+                            <div class="choix_content">
+                                <h4 class="choix_title">Oeuf au plat</h4>
+                                <p class="choix_description">Assaisoné à la truffe sur lit de caviar</p>
+                            </div>
+                            <div class="animation">
+                                <div class="choix_price">
+                                    <p>20€</p>
+                                </div>
+                                <div class="check">
+                                    <i class="far fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categories">
+                    <h3 class="categories_title">PLATS</h3>
+                    <div class="line_title"></div>
+                    <div class="categories_choix">
+                        <div class="plat">
+                            <input type="checkbox" id="choix4" class="choix_check">
+                            <label for="choix4" class="choix choix1"></label>
+                            <div class="plat_content plat1">
+                                <div class="choix_content">
+                                    <h4 class="choix_title">Filet de boeuf aux herbes</h4>
+                                    <p class="choix_description">Accompagné de sa ribambelle de légumes</p>
+                                </div> 
+                                <div class="animation">
+                                    <div class="choix_price">
+                                        <p>40€</p>
+                                    </div>
+                                    <div class="check">
+                                        <i class="far fa-check-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plat">
+                            <input type="checkbox" id="choix5" class="choix_check">
+                            <label for="choix5" class="choix choix2"></label>
+                            <div class="plat_content plat2">
+                                <div class="choix_content">
+                                    <h4 class="choix_title">Parmentier de queue de boeuf</h4>
+                                    <p class="choix_description">A la truffe noire sur sa purée de panais</p>
+                                </div>
+                                <div class="animation">
+                                    <div class="choix_price">
+                                        <p>35€</p>
+                                    </div>
+                                    <div class="check">
+                                        <i class="far fa-check-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plat">
+                            <input type="checkbox" id="choix6" class="choix_check">
+                            <label for="choix6" class="choix choix3"></label>
+                            <div class="plat_content plat3">
+                                <div class="choix_content">
+                                    <h4 class="choix_title">Filet de Turbot</h4>
+                                    <p class="choix_description">Aux agrumes</p>
+                                </div>
+                                <div class="animation">
+                                    <div class="choix_price">
+                                        <p>44€</p>
+                                    </div>
+                                    <div class="check">
+                                        <i class="far fa-check-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categories">
+                    <h3 class="categories_title">DESSERTS</h3>
+                    <div class="line_title"></div>
+                    <div class="categories_choix">
+                        <div class="plat">
+                            <input type="checkbox" id="choix7" class="choix_check">
+                            <label for="choix7" class="choix choix1"></label>
+                            <div class="plat_content plat1">
+                                <div class="choix_content">
+                                    <h4 class="choix_title">Paris-Brest</h4>
+                                    <p class="choix_description">Revisité</p>
+                                </div> 
+                                <div class="animation">
+                                    <div class="choix_price">
+                                        <p>18€</p>
+                                    </div>
+                                    <div class="check">
+                                        <i class="far fa-check-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plat">
+                            <input type="checkbox" id="choix8" class="choix_check">
+                            <label for="choix8" class="choix choix2"></label>
+                            <div class="plat_content plat2">
+                                <div class="choix_content">
+                                    <h4 class="choix_title">Macaron au chocolat d'exception</h4>
+                                    <p class="choix_description">A la glace vanille de Madagascar</p>
+                                </div>
+                                <div class="animation">
+                                    <div class="choix_price">
+                                        <p>22€</p>
+                                    </div>
+                                    <div class="check">
+                                        <i class="far fa-check-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plat">
+                            <input type="checkbox" id="choix9" class="choix_check">
+                            <label for="choix9" class="choix choix3"></label>
+                            <div class="plat_content plat3">
+                                <div class="choix_content">
+                                    <h4 class="choix_title">Mousse au chocolat</h4>
+                                    <p class="choix_description">Au piment d'espelette et à la truffe noire</p>
+                                </div>
+                                <div class="animation">
+                                    <div class="choix_price">
+                                        <p>23€</p>
+                                    </div>
+                                    <div class="check">
+                                        <i class="far fa-check-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="commande">
+                <a href="#" class="command_btn">Commander</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3 class="footer_logo">ohmyfood</h3>
+            <ul class="footer_items">
+                <li class="footer_item">
+                    <a href="#" class="item"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+                </li>
+                <li class="footer_item">
+                    <a href="#" class="item"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+                </li>
+                <li class="footer_item">
+                    <a href="#" class="item">Mentions légales</a>
+                </li>
+                <li class="footer_item">
+                    <a href="mailto:contact@ohmyfood.com" class="item">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

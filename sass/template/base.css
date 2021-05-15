@@ -1,0 +1,77 @@
+body {
+  width: auto;
+  margin: 0;
+}
+
+h1, h2, h3, h4, a, span, p {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+/*-----header-----*/
+header {
+  text-align: center;
+  border-bottom: 2px solid #cdc7be;
+  /*-----Arrow visible que sur les pages menu-----*/
+}
+
+header .arrow {
+  margin: 3% 0 10px 20px;
+  float: left;
+  color: black;
+}
+
+header .arrow i {
+  font-size: 20px;
+}
+
+header img {
+  width: 40%;
+  margin: 10px 0 10px 0;
+}
+
+/*-----FOOTER-----*/
+footer {
+  background-color: #393232;
+  color: white;
+}
+
+footer .container {
+  padding: 5%;
+}
+
+.footer_logo {
+  font-family: 'Shrikhand', cursive;
+  margin-top: 0;
+  font-weight: 200;
+}
+
+.footer_items {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_item {
+  margin-bottom: 5px;
+}
+
+.footer_item .item {
+  color: white;
+  text-decoration: none;
+}
+
+.footer_item i {
+  margin-right: 10px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .banner_btn:hover {
+    opacity: 0.8;
+    -webkit-box-shadow: #393232 0 5px 5px;
+            box-shadow: #393232 0 5px 5px;
+  }
+}
+/*# sourceMappingURL=base.css.map */

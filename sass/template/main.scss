@@ -1,0 +1,218 @@
+@import 'variable.scss';
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/*-----main----*/
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/*-----LA LOCALISATION-----*/
+#local{
+    background-color: $gris;
+    text-align: center;
+    .local_icon{
+        margin: 10px 0 10px 0;
+    }
+    .local_text{
+        margin: 10px;
+    }
+}
+
+/*-----LE SLOGAN-----*/
+#banner{
+    background-color: $gris_clair;
+    text-align: center;
+    padding-bottom: 35px;
+        .banner_text{
+            margin: 10px 0 35px 0;
+        }
+        a{
+            padding: 15px 20px 15px 20px;
+            background: linear-gradient(-190deg, $secondary_color,40%,$primary_color);
+            border-radius: 24.5px;
+            color: white;
+            text-decoration: none;
+            box-shadow: $gris_fonce  0 5px 5px ;
+        }
+}
+
+
+/*-----GUIDE UTILISATION-----*/
+#guide .container{
+    padding: 40px 0 40px 0;
+}
+.guide_title{
+    margin-left: 5%;
+}
+.guide_etapes{
+    list-style: none;
+    margin-left: 5%;
+    padding: 0;
+    align-items: center;
+}
+.guide_etape{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0;
+    align-items: center;
+    margin-bottom: 20px;
+    .guide_number{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        color: white;
+        background-color: $primary_color;
+        font-weight: bold;
+        margin-right: -15px;
+        
+    }
+    .etape_content{
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 20px;
+        background-color: $gris_clair;
+        font-size: 16px;
+        width: 95%;
+        box-shadow: $gris_fonce  0 5px 5px ;
+    }
+    .etape_final{
+        background-color: $etape_bg;
+    }
+    .guide_icon{
+        padding: 20px 0 20px 40px;
+        .fa-store{
+            color: $primary_color;
+        }
+     }
+}
+    .guide_text{
+        padding: 20px 20px 20px 20px;
+        font-weight: bold;
+
+    }
+
+    @media only screen and (min-width:915px){
+        .guide_etapes{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .guide_etape{
+                width: 33%;
+            }
+        }
+        #banner a:hover{
+            opacity: 0.8;
+            
+        }
+    }
+/*-----RESTAURANTS-----*/
+#restaurants{
+    background-color: $gris_clair;
+    .container{
+        padding: 40px 0 40px 0;
+    }
+}
+.restaurants_title{
+    margin-left: 5%;
+    margin-top: 0;
+}
+.cards{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+.card{
+    z-index: 1;
+    width: 100%;
+    height: 250px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    .image{
+        height: 180px;
+    }
+    .card_image{
+        object-fit: cover;
+        width: 100%;
+        height:180px;
+        border-radius: 25px 25px 0 0 ;
+        position: relative;
+    }
+    .card_new{
+        position: absolute;
+        margin: 5% 0 0 -7em;
+        padding: 10px;
+        background-color: $tertiary_color;
+    }
+}
+.card_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    margin-bottom: 20px;
+    border-radius: 0 0 25px 25px;
+    background-color: #fff;
+    box-shadow: $gris_fonce  0 5px 5px ;
+}
+.content{
+    padding: 15px;
+    width: 70%;
+    .content_title{
+        margin: 0;
+    }
+    .content_local{
+        margin: 0;
+    }
+}
+.content_btn{
+    font-size: 25px;
+    padding: 15px 15px 0 0;
+    .like{
+        display: none;
+    }
+    .like + label::before{
+        cursor: pointer;
+        font-family: "Font Awesome 5 Free";
+        content: "\f004";
+        font-weight: 400;
+        font-size: 25px;
+    }
+    .like:checked + label::before{
+        font-family: "Font Awesome 5 free";
+        content: far-content("\f004");
+        font-weight: 900;
+        color: transparent; 
+        background: linear-gradient(10deg, $secondary_color,40%,$primary_color);
+       -webkit-background-clip: text;
+        transition-duration: 0.5s;
+    }
+}
+@media only screen and (min-width: 640px){
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .card{
+            width: 40%;
+            margin-top: 50px;
+        }
+    }
+}
+
+
+
+
+
+  
+
+
+    
