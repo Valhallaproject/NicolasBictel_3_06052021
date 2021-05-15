@@ -102,6 +102,7 @@ main{
 .choix_price{
     height: 30px;
     font-weight: bold;
+    margin-left: 5px;
 }
 .check{
     background-color: $tertiary_color;
@@ -126,18 +127,25 @@ main{
     margin-bottom: 15px;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    z-index: 1;
+    opacity: 0;
+}
+.plat{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.choix1{          /*-----Animation d'entrée-----*/
+.plat1{          /*-----Animation d'entrée-----*/
     animation: fadeIn 1s;
 }
-.choix2{
+.plat2{
     animation: fadeIn 1.5s;
 }
-.choix3{
+.plat3{
     animation: fadeIn 2s;
 }
-.choix4{
+.plat4{
     animation: fadeIn 2.5s;
 }
 @keyframes fadeIn {
@@ -151,24 +159,25 @@ main{
 .animation{
     display: flex;
     flex-wrap: wrap;
-    transform: translate(10%, 0);
     align-items: center;
+    background-color: white;
+    float: right;
+
     i{
-        transform: rotate(360deg);
         font-weight: 900;
         color: white;
     }
 }
 /*-----effet à la sélection d'une assiette-----*/
-.choix_check:checked + .choix  .animation{
-    transform: translate(0%, 0);
+ .plat .choix_check:checked + .choix + .plat_content .animation{
+    transform: translate(5%, 0);
     transition: 1s;
     i{
         transform: rotate(0deg);
         transition: 1.5s;
     }
 }
-.choix_check + .choix  .animation{
+.plat .choix_check + .choix + .plat_content .animation{
     transform: translate(60%, 0);
     transition: 1s;
     i{
@@ -176,14 +185,26 @@ main{
         transition: 1.5s;
     }
 }
-.choix_check:checked + .choix  .choix_content{
+.plat .choix_check:checked + .choix + .plat_content .choix_content{
     .choix_description{
-        white-space: nowrap; 
+        animation: ellipsis;
+        animation-delay: 0.75s;
+        animation-fill-mode: both;
+        
+    }
+    @keyframes ellipsis{
+        from{
+            white-space: nowrap; 
+        }
+        to{
+             white-space: nowrap; 
         overflow: hidden;
         text-overflow: ellipsis;
+        }
     }
 }
-.choix_check + .choix  .choix_content{
+
+.palt .choix_check + .choix + .plat_content .choix_content{
     
     .choix_description{
         transition-delay: 2s;
@@ -191,6 +212,21 @@ main{
         
     }
     
+}
+.plat .plat_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95%;
+    margin-right: 10px;
+    height: 58px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+
 }
 
 /*-----BTN commande-----*/
@@ -212,6 +248,9 @@ main{
         width: 50%;
         margin: 0 auto;
     }
+    .plat .plat_content{
+        width: 50%;
+    }
 }
 @media only screen and (min-width: 1200px){
     #menu_restaurant .restaurant_categories{
@@ -221,6 +260,9 @@ main{
 
     
     }.categories{
+        width: 30%;
+    }
+    .plat .plat_content{
         width: 30%;
     }
     .command_btn:hover{
