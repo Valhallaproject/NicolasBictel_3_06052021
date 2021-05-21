@@ -85,10 +85,6 @@
     top: 50%;
     height: 32px;
   }
-  100% {
-    top: 45%;
-    height: 32px;
-  }
 }
 
 @keyframes loaders {
@@ -98,10 +94,6 @@
   }
   50% {
     top: 50%;
-    height: 32px;
-  }
-  100% {
-    top: 45%;
     height: 32px;
   }
 }
