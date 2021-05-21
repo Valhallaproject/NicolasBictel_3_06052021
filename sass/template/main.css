@@ -21,6 +21,10 @@ main {
   text-align: center;
 }
 
+#local h4 {
+  margin: 0;
+}
+
 #local .local_icon {
   margin: 10px 0 10px 0;
 }
@@ -129,7 +133,7 @@ main {
 }
 
 .guide_text {
-  padding: 20px 20px 20px 20px;
+  padding: 20px 0 20px 20px;
   font-weight: bold;
 }
 
@@ -149,6 +153,14 @@ main {
   }
   #banner a:hover {
     opacity: 0.8;
+    -webkit-box-shadow: #393232 0 5px 5px;
+            box-shadow: #393232 0 5px 5px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #guide .container {
+    margin: 0 15% 0 15%;
   }
 }
 
@@ -270,6 +282,12 @@ main {
   .cards .card {
     width: 40%;
     margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #restaurants .container {
+    margin: 0 15% 0 15%;
   }
 }
 /*# sourceMappingURL=main.css.map */

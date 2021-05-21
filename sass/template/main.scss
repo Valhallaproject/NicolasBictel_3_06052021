@@ -14,6 +14,9 @@ main{
 #local{
     background-color: $gris;
     text-align: center;
+    h4{
+        margin: 0;
+    }
     .local_icon{
         margin: 10px 0 10px 0;
     }
@@ -94,26 +97,31 @@ main{
         }
      }
 }
-    .guide_text{
-        padding: 20px 20px 20px 20px;
-        font-weight: bold;
+.guide_text{
+    padding: 20px 0 20px 20px;
+    font-weight: bold;
 
-    }
+}
 
-    @media only screen and (min-width:915px){
-        .guide_etapes{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            .guide_etape{
-                width: 33%;
-            }
-        }
-        #banner a:hover{
-            opacity: 0.8;
-            
+@media only screen and (min-width:915px){
+    .guide_etapes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .guide_etape{
+             width: 33%;
         }
     }
+    #banner a:hover{
+        opacity: 0.8;
+        box-shadow: $footer_color  0 5px 5px ;
+    }
+}
+@media only screen and (min-width: 1440px){
+    #guide .container{
+        margin: 0 15% 0 15%;
+    }
+}
 /*-----RESTAURANTS-----*/
 #restaurants{
     background-color: $gris_clair;
@@ -207,6 +215,12 @@ main{
         }
     }
 }
+@media only screen and (min-width: 1440px){
+    #restaurants .container{
+        margin: 0 15% 0 15%;
+    }
+}
+
 
 
 

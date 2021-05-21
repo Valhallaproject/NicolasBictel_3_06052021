@@ -171,7 +171,7 @@ main{
 /*-----effet à la sélection d'une assiette-----*/
  .plat .choix_check:checked + .choix + .plat_content .animation{
     transform: translate(5%, 0);
-    transition: 1s;
+    transition: 0.5s;
     i{
         transform: rotate(0deg);
         transition: 1.5s;
@@ -179,16 +179,16 @@ main{
 }
 .plat .choix_check + .choix + .plat_content .animation{
     transform: translate(60%, 0);
-    transition: 1s;
+    transition: 0.5s;
     i{
         transform: rotate(360deg);
         transition: 1.5s;
     }
 }
 .plat .choix_check:checked + .choix + .plat_content .choix_content{
-    .choix_description{
+    .choix_description, .choix_title{
         animation: ellipsis;
-        animation-delay: 0.75s;
+        animation-delay: 0.2s;
         animation-fill-mode: both;
         
     }
@@ -197,9 +197,9 @@ main{
             white-space: nowrap; 
         }
         to{
-             white-space: nowrap; 
-        overflow: hidden;
-        text-overflow: ellipsis;
+            white-space: nowrap; 
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
 }
@@ -210,9 +210,9 @@ main{
         transition-delay: 2s;
         overflow: visible;
         
-    }
-    
+    }    
 }
+
 .plat .plat_content{
     display: flex;
     flex-wrap: wrap;
@@ -242,6 +242,23 @@ main{
         box-shadow: $gris_fonce  0 5px 5px ;
     }
 }
+@media only screen and (max-width: 320px){
+    .choix_content{
+        width: 80%;
+    }
+    .choix_description{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .plat .choix_check + .choix + .plat_content .animation{
+        transform: translate(60%, 0);
+        transition: 0.5s;
+        position: absolute;
+        margin-left: 62%;
+    }
+}
+
 
 @media only screen and (min-width: 640px){
     .categories{
