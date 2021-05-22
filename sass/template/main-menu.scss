@@ -188,7 +188,7 @@ main{
 .plat .choix_check:checked + .choix + .plat_content .choix_content{
     .choix_description, .choix_title{
         animation: ellipsis;
-        animation-delay: 0.2s;
+        animation-delay: 0.3s;
         animation-fill-mode: both;
         
     }
@@ -204,14 +204,14 @@ main{
     }
 }
 
-.palt .choix_check + .choix + .plat_content .choix_content{
+/*.palt .choix_check + .choix + .plat_content .choix_content{
     
     .choix_description{
         transition-delay: 2s;
         overflow: visible;
         
     }    
-}
+}*/
 
 .plat .plat_content{
     display: flex;
@@ -257,6 +257,9 @@ main{
         position: absolute;
         margin-left: 62%;
     }
+}
+.plat .choix_check:checked + .choix + .plat_content .choix_content{
+    width: 60%;;
 }
 
 
