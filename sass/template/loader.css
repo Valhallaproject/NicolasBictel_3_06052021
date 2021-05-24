@@ -74,8 +74,8 @@
   position: absolute;
   left: 40%;
   width: 4%;
-  -webkit-animation: loaders 4s cubic-bezier(0, 0.5, 0.5, 1);
-          animation: loaders 4s cubic-bezier(0, 0.5, 0.5, 1);
+  -webkit-animation: loaders 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+          animation: loaders 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
 
 @-webkit-keyframes loaders {
@@ -83,13 +83,9 @@
     top: 45%;
     height: 64px;
   }
-  50% {
+  50%, 100% {
     top: 50%;
     height: 32px;
-  }
-  100% {
-    top: 45%;
-    height: 64px;
   }
 }
 
@@ -98,13 +94,9 @@
     top: 45%;
     height: 64px;
   }
-  50% {
+  50%, 100% {
     top: 50%;
     height: 32px;
-  }
-  100% {
-    top: 45%;
-    height: 64px;
   }
 }
 /*# sourceMappingURL=loader.css.map */

@@ -43,19 +43,16 @@
     position: absolute;
     left: 40%;
     width: 4%;
-    animation: loaders 4s cubic-bezier(0, 0.5, 0.5, 1) ;
+    animation: loaders 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite ;
   }
   @keyframes loaders {
     0% {
       top: 45%;
       height: 64px;
     }
-    50% {
+    50%, 100% {
       top: 50%;
       height: 32px;
-    }100%{
-      top: 45%;
-      height: 64px;
     }
     
   }
