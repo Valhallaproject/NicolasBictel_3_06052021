@@ -5,6 +5,7 @@
   }
   75% {
     opacity: 1;
+    z-index: 1000;
   }
   100% {
     opacity: 0;
@@ -19,6 +20,7 @@
   }
   75% {
     opacity: 1;
+    z-index: 1000;
   }
   100% {
     opacity: 0;
@@ -72,8 +74,8 @@
   position: absolute;
   left: 40%;
   width: 4%;
-  -webkit-animation: loaders 1.2s cubic-bezier(0, 0.5, 0.5, 1);
-          animation: loaders 1.2s cubic-bezier(0, 0.5, 0.5, 1);
+  -webkit-animation: loaders 4s cubic-bezier(0, 0.5, 0.5, 1);
+          animation: loaders 4s cubic-bezier(0, 0.5, 0.5, 1);
 }
 
 @-webkit-keyframes loaders {
@@ -85,6 +87,10 @@
     top: 50%;
     height: 32px;
   }
+  100% {
+    top: 45%;
+    height: 64px;
+  }
 }
 
 @keyframes loaders {
@@ -95,6 +101,10 @@
   50% {
     top: 50%;
     height: 32px;
+  }
+  100% {
+    top: 45%;
+    height: 64px;
   }
 }
 /*# sourceMappingURL=loader.css.map */

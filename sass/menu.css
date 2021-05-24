@@ -249,23 +249,23 @@ main {
 
 .plat1 {
   /*-----Animation d'entrée-----*/
+  -webkit-animation: fadeIn 0.5s;
+          animation: fadeIn 0.5s;
+}
+
+.plat2 {
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
 }
 
-.plat2 {
+.plat3 {
   -webkit-animation: fadeIn 1.5s;
           animation: fadeIn 1.5s;
 }
 
-.plat3 {
+.plat4 {
   -webkit-animation: fadeIn 2s;
           animation: fadeIn 2s;
-}
-
-.plat4 {
-  -webkit-animation: fadeIn 2.5s;
-          animation: fadeIn 2.5s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -346,8 +346,8 @@ main {
 .plat .choix_check:checked + .choix + .plat_content .choix_content .choix_description, .plat .choix_check:checked + .choix + .plat_content .choix_content .choix_title {
   -webkit-animation: ellipsis;
           animation: ellipsis;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -374,12 +374,14 @@ main {
   }
 }
 
-.palt .choix_check + .choix + .plat_content .choix_content .choix_description {
-  -webkit-transition-delay: 2s;
-          transition-delay: 2s;
-  overflow: visible;
-}
-
+/*.palt .choix_check + .choix + .plat_content .choix_content{
+    
+    .choix_description{
+        transition-delay: 2s;
+        overflow: visible;
+        
+    }    
+}*/
 .plat .plat_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,6 +437,10 @@ main {
   }
 }
 
+.plat .choix_check:checked + .choix + .plat_content .choix_content {
+  width: 60%;
+}
+
 @media only screen and (min-width: 640px) {
   .categories {
     width: 50%;
@@ -442,6 +448,12 @@ main {
   }
   .plat .plat_content {
     width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .choix {
+    cursor: pointer;
   }
 }
 
