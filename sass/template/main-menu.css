@@ -158,7 +158,6 @@ main {
   margin-bottom: 15px;
   overflow: hidden;
   text-overflow: ellipsis;
-  cursor: pointer;
   z-index: 1;
   opacity: 0;
 }
@@ -173,23 +172,23 @@ main {
 
 .plat1 {
   /*-----Animation d'entrée-----*/
+  -webkit-animation: fadeIn 0.5s;
+          animation: fadeIn 0.5s;
+}
+
+.plat2 {
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
 }
 
-.plat2 {
+.plat3 {
   -webkit-animation: fadeIn 1.5s;
           animation: fadeIn 1.5s;
 }
 
-.plat3 {
+.plat4 {
   -webkit-animation: fadeIn 2s;
           animation: fadeIn 2s;
-}
-
-.plat4 {
-  -webkit-animation: fadeIn 2.5s;
-          animation: fadeIn 2.5s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -372,6 +371,12 @@ main {
   }
   .plat .plat_content {
     width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .choix {
+    cursor: pointer;
   }
 }
 
